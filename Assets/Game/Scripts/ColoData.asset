@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea652f2511f702a498017a2c17268826, type: 3}
+  m_Name: ColoData
+  m_EditorClassIdentifier: 
+  colors:
+  - {fileID: 2100000, guid: 99a51c02c187df440b93c8719038c4d0, type: 2}
+  - {fileID: 2100000, guid: 5e21b2043fbdea64495705b1b3a22b03, type: 2}
+  - {fileID: 2100000, guid: 7b73c996bce1f8946b17af69c5cfa8f3, type: 2}
+  - {fileID: 2100000, guid: 52f1465a2a6877140b5c455f8ae203d5, type: 2}
