@@ -1,11 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using System.Linq;
 
 public class Player : Character
 {
     [SerializeField] private Joystick Joystick;
     [SerializeField] private float Speed;
+    //[SerializeField] private MeshRenderer renderer;
+    public Material[] colorMats;
+    public Platform platform;
+    public Stage Stage;
+    public ColorEnum colorType;
     // Update is called once per frame
     void Update()
     {
@@ -14,15 +22,31 @@ public class Player : Character
 
     public override void Move()
     {
+        Debug.Log("1");
         //Check Input
         float hozizontal = Joystick.Horizontal;
-        float vertical = Joystick.Vertical;
+        float vertical = Joystick.Vertical; 
 
         //Convert sang vector3
         Vector3 Direction = new Vector3(hozizontal, 0, vertical);
 
+        //Hï¿½m Move
+        transform.Translate(Direction * Time.deltaTime * Speed, Space.World);
+    }
 
-        //Hàm move
-        transform.Translate(Direction * Time.deltaTime * Speed);
+    public void ChangeColor(ColorEnum colorEnum)
+    {
+        this.colorType = colorEnum;
+        GetComponent<Renderer>().material = GetColorMat(colorType);
+    }
+
+    public Material GetColorMat(ColorEnum colorEnum)
+    {
+        return colorMats[(int)colorEnum];
     }
 }
+
+
+
+
+

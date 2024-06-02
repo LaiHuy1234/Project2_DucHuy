@@ -7,6 +7,7 @@ public class Platform : MonoBehaviour
     [SerializeField] private GameObject brick;
     [SerializeField] private Transform[] brickPoints;
     [SerializeField] private Transform startPosition;
+    [SerializeField] public GameObject[] List;
 
     // Start is called before the first frame update
     void Start()
@@ -24,9 +25,11 @@ public class Platform : MonoBehaviour
             zSpace = 0f;
             for (int y = 0; y < 15; y++)
             {
+
                 zSpace += 2f;
                 Vector3 position = new Vector3(startPosition.position.x + xScape, 0, startPosition.position.z + zSpace);
                 Instantiate(brick, position, Quaternion.identity);
+
             }
         }
     }
