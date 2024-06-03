@@ -8,6 +8,9 @@ public class Platform : MonoBehaviour
     [SerializeField] private Transform[] brickPoints;
     [SerializeField] private Transform startPosition;
     [SerializeField] public GameObject[] List;
+    [SerializeField] private ColorData colorData;
+    
+     
 
     // Start is called before the first frame update
     void Start()
@@ -29,7 +32,10 @@ public class Platform : MonoBehaviour
                 zSpace += 2f;
                 Vector3 position = new Vector3(startPosition.position.x + xScape, 0, startPosition.position.z + zSpace);
                 Instantiate(brick, position, Quaternion.identity);
-
+                Renderer renderer = brick.GetComponent<Renderer>();
+                int ColorRandom = Random.Range(0, 4);
+                ColorEnum ColorRandomColor = (ColorEnum)ColorRandom;
+                renderer.material = colorData.GetColorData(ColorRandomColor);
             }
         }
     }
