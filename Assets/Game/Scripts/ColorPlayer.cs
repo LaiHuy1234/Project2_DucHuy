@@ -2,16 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Brick : MonoBehaviour
+public class ColorPlayer : MonoBehaviour
 {
-    [SerializeField] private ColorEnum ColorEnum;
-    [SerializeField] public MeshRenderer MeshRenderer;
+    [SerializeField] private SkinnedMeshRenderer m_Renderer;
     [SerializeField] private ColorData ColorData;
+    [SerializeField] private ColorEnum ColorEnum;
 
     public void ChangeColor(ColorEnum colorEnum)
     {
         this.ColorEnum = colorEnum;
-        MeshRenderer.material = ColorData.GetColorData(ColorEnum);
+        m_Renderer.material = ColorData.GetColorData(ColorEnum);
     }
-
 }

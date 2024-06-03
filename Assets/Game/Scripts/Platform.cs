@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Platform : MonoBehaviour
 {
-    [SerializeField] private GameObject brick;
+    [SerializeField] private Brick brickPrefab;
     [SerializeField] private Transform[] brickPoints;
     [SerializeField] private Transform startPosition;
     [SerializeField] public GameObject[] List;
@@ -31,11 +31,14 @@ public class Platform : MonoBehaviour
 
                 zSpace += 2f;
                 Vector3 position = new Vector3(startPosition.position.x + xScape, 0, startPosition.position.z + zSpace);
-                Instantiate(brick, position, Quaternion.identity);
-                Renderer renderer = brick.GetComponent<Renderer>();
+                Brick brick = Instantiate(brickPrefab, position, Quaternion.identity);
+                //Renderer renderer = brickPrefab.GetComponent<Renderer>();
+                //int ColorRandom = Random.Range(0, 4);
+                //ColorEnum ColorRandomColor = (ColorEnum)ColorRandom;
+                //renderer.material = colorData.GetColorData(ColorRandomColor);
+
                 int ColorRandom = Random.Range(0, 4);
-                ColorEnum ColorRandomColor = (ColorEnum)ColorRandom;
-                renderer.material = colorData.GetColorData(ColorRandomColor);
+                brick.ChangeColor((ColorEnum)ColorRandom);
             }
         }
     }

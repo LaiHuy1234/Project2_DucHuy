@@ -9,11 +9,19 @@ public class Player : Character
 {
     [SerializeField] private Joystick Joystick;
     [SerializeField] private float Speed;
+    [SerializeField] private ColorData ColorData;
+    [SerializeField] private ColorEnum ColorEnum;
+    [SerializeField] ColorPlayer playerColor;
+    [SerializeField] private SkinnedMeshRenderer skinnedMeshRenderer;
     //[SerializeField] private MeshRenderer renderer;
     public Material[] colorMats;
     public Platform platform;
-    public Stage Stage;
     public ColorEnum colorType;
+
+    private void Start()
+    {
+        RandomColor();
+    }
     // Update is called once per frame
     void Update()
     {
@@ -34,16 +42,17 @@ public class Player : Character
         transform.Translate(Direction * Time.deltaTime * Speed, Space.World);
     }
 
-    public void ChangeColor(ColorEnum colorEnum)
+    public void RandomColor()
     {
-        this.colorType = colorEnum;
-        GetComponent<Renderer>().material = GetColorMat(colorType);
+        int ColorRandom = Random.Range(0, 4);
+        playerColor.ChangeColor((ColorEnum)ColorRandom);
     }
 
-    public Material GetColorMat(ColorEnum colorEnum)
-    {
-        return colorMats[(int)colorEnum];
-    }
+   
+
+    
+
+
 }
 
 

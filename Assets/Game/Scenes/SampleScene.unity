@@ -123,6 +123,31 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &474818681 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -4594301083077232248, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
+  m_PrefabInstance: {fileID: 1888303736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &474818683 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -310153274918992457, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
+  m_PrefabInstance: {fileID: 1888303736}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &474818684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474818681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f11839ce8bd552449462bd6edbc6287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Renderer: {fileID: 474818683}
+  ColorData: {fileID: 11400000, guid: 198a3d5ed80dfdd49ab8028bf02fc759, type: 2}
+  ColorEnum: 0
 --- !u!4 &554961718 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
@@ -529,11 +554,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07fb5fe6925253418db4d407c872627, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  brick: {fileID: -7372427561762635542, guid: b44cd19959e908441a5146cb9131328f, type: 3}
   Joystick: {fileID: 1579625474}
   Speed: 20
+  ColorData: {fileID: 11400000, guid: 198a3d5ed80dfdd49ab8028bf02fc759, type: 2}
+  ColorEnum: 0
+  playerColor: {fileID: 474818684}
+  skinnedMeshRenderer: {fileID: 474818683}
   colorMats: []
   platform: {fileID: 0}
-  Stage: {fileID: 0}
   colorType: 0
 --- !u!4 &1242177946
 Transform:
@@ -700,6 +729,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3698062087255683527, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4051267888659180384, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
       value: 0
@@ -850,7 +883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72923fce27d53714faad335e9da0907a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  brick: {fileID: 4945442406534142594, guid: b44cd19959e908441a5146cb9131328f, type: 3}
+  brickPrefab: {fileID: -7372427561762635542, guid: b44cd19959e908441a5146cb9131328f, type: 3}
   brickPoints:
   - {fileID: 0}
   - {fileID: 0}
@@ -931,53 +964,6 @@ Transform:
   - {fileID: 826631862}
   - {fileID: 1254671014}
   - {fileID: 554961718}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1635698723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1635698725}
-  - component: {fileID: 1635698724}
-  m_Layer: 0
-  m_Name: Bricks
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1635698724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635698723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7983a75a905cc9c4b91c68a7119624d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ColorEnum: 0
-  MeshRenderer: {fileID: 0}
-  ColorData: {fileID: 0}
---- !u!4 &1635698725
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1635698723}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 540, y: 960, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849907921
@@ -1145,6 +1131,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1060132765}
+    - targetCorrespondingSourceObject: {fileID: -4594301083077232248, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 474818684}
   m_SourcePrefab: {fileID: 100100000, guid: 93b6444b4be9ecc44a98a83cef570ca8, type: 3}
 --- !u!1001 &1941182393
 PrefabInstance:
@@ -1197,6 +1186,10 @@ PrefabInstance:
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698062087255683527, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1454,6 +1447,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3698062087255683527, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1468,5 +1465,4 @@ SceneRoots:
   - {fileID: 1242177946}
   - {fileID: 2118418911}
   - {fileID: 1353210511}
-  - {fileID: 1635698725}
   - {fileID: 1604834672}
