@@ -15,4 +15,9 @@ public class Stair : MonoBehaviour
     {
         
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+       
+    }
 }

@@ -8,15 +8,11 @@ using System.Linq;
 public class Player : Character
 {
     [SerializeField] private Joystick Joystick;
+    [SerializeField] private ColorPlayer playerColor;
     [SerializeField] private float Speed;
-    [SerializeField] private ColorData ColorData;
-    [SerializeField] private ColorEnum ColorEnum;
-    [SerializeField] ColorPlayer playerColor;
-    [SerializeField] private SkinnedMeshRenderer skinnedMeshRenderer;
     //[SerializeField] private MeshRenderer renderer;
     public Material[] colorMats;
     public Platform platform;
-    public ColorEnum colorType;
 
     private void Start()
     {
@@ -45,14 +41,8 @@ public class Player : Character
     public void RandomColor()
     {
         int ColorRandom = Random.Range(0, 4);
-        playerColor.ChangeColor((ColorEnum)ColorRandom);
+       ChangeColor((ColorEnum)ColorRandom);
     }
-
-   
-
-    
-
-
 }
 
 

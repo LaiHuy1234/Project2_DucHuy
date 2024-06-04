@@ -120,4 +120,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ColorEnum: 0
   MeshRenderer: {fileID: 6404684160342371744}
+  Collider: {fileID: 4352157790330837491}
   ColorData: {fileID: 11400000, guid: 198a3d5ed80dfdd49ab8028bf02fc759, type: 2}
