@@ -4,20 +4,19 @@ using UnityEngine;
 
 public class Stair : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public ColorEnum ColorEnum;
+    public MeshRenderer MeshRenderer;
+    public BoxCollider Collider;
+    [SerializeField] private ColorData ColorData;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //private void Awake()
+    //{
+    //    ChangeColor(ColorEnum.Blue);
+    //}
 
-    private void OnTriggerEnter(Collider other)
+    public void ChangeColor(ColorEnum colorEnum)
     {
-       
+        this.ColorEnum = colorEnum;
+        MeshRenderer.material = ColorData.GetColorData(ColorEnum);
     }
 }

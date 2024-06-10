@@ -10,10 +10,10 @@ public class Brick : MonoBehaviour
     public BoxCollider Collider;
     [SerializeField] private ColorData ColorData;
 
-    private void Awake()
-    {
-        ChangeColor(ColorEnum.Blue);
-    }
+        //private void Awake()
+        //{
+        //    ChangeColor(ColorEnum.Blue);
+        //}
 
     public void ChangeColor(ColorEnum colorEnum)
     {
