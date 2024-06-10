@@ -356,9 +356,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 831529724423933349, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 986756605822338479, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210020506873330436, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224195275727092850, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Name
@@ -367,6 +375,14 @@ PrefabInstance:
     - target: {fileID: 1485579109499573759, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494345583708282797, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677632382406351679, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -416,6 +432,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4352639601500311956, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502702768085123605, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -424,6 +444,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 6535680857672767300, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882645533220013981, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6938962389799203960, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -431,6 +459,14 @@ PrefabInstance:
     - target: {fileID: 8389318372070257297, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941188361857949607, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112091977081795301, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -888,7 +924,7 @@ GameObject:
   - component: {fileID: 826631867}
   m_Layer: 0
   m_Name: Background (1)
-  m_TagString: Untagged
+  m_TagString: Stage2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1775,9 +1811,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 831529724423933349, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 986756605822338479, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210020506873330436, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224195275727092850, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Name
@@ -1786,6 +1830,14 @@ PrefabInstance:
     - target: {fileID: 1485579109499573759, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494345583708282797, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677632382406351679, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1835,6 +1887,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4352639601500311956, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502702768085123605, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -1843,6 +1899,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 6535680857672767300, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882645533220013981, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6938962389799203960, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -1850,6 +1914,14 @@ PrefabInstance:
     - target: {fileID: 8389318372070257297, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941188361857949607, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112091977081795301, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2061,11 +2133,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 581925487733355572, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 831529724423933349, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 986756605822338479, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210020506873330436, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224195275727092850, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Name
@@ -2073,19 +2153,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1225462287143083994, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1415863313292462485, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1485579109499573759, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 1494345583708282797, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677632382406351679, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1994426138675594499, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2139,6 +2227,10 @@ PrefabInstance:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4352639601500311956, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502702768085123605, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -2149,11 +2241,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6186538898766953990, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6348661979017626597, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6535680857672767300, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882645533220013981, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6938962389799203960, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
@@ -2161,11 +2261,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7132055169926904997, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7533091552737392306, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7726271848632190326, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Layer
@@ -2177,11 +2277,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8136913046957545640, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_IsTrigger
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8389318372070257297, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941188361857949607, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112091977081795301, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2490,9 +2598,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 831529724423933349, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 986756605822338479, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210020506873330436, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224195275727092850, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Name
@@ -2501,6 +2617,14 @@ PrefabInstance:
     - target: {fileID: 1485579109499573759, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494345583708282797, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677632382406351679, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2550,6 +2674,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4352639601500311956, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502702768085123605, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -2558,6 +2686,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 6535680857672767300, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882645533220013981, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6938962389799203960, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -2565,6 +2701,14 @@ PrefabInstance:
     - target: {fileID: 8389318372070257297, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941188361857949607, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112091977081795301, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3342,9 +3486,17 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 831529724423933349, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 986756605822338479, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1210020506873330436, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1224195275727092850, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_Name
@@ -3353,6 +3505,14 @@ PrefabInstance:
     - target: {fileID: 1485579109499573759, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1494345583708282797, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1677632382406351679, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2342883232686914502, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3402,6 +3562,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4352639601500311956, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4502702768085123605, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -3410,6 +3574,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Stair
       objectReference: {fileID: 0}
+    - target: {fileID: 6535680857672767300, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6882645533220013981, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6938962389799203960, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
@@ -3417,6 +3589,14 @@ PrefabInstance:
     - target: {fileID: 8389318372070257297, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
       propertyPath: m_TagString
       value: Stair
+      objectReference: {fileID: 0}
+    - target: {fileID: 8941188361857949607, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9112091977081795301, guid: 89f75abeac2cd3043bcfa75f82050688, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
