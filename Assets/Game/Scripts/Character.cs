@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,17 +9,18 @@ public class Character : MonoBehaviour
     [SerializeField] private ColorData ColorData;
     [SerializeField] private Vector3 Point;
     public List<Brick> playerBricks = new List<Brick>();
-    private bool isMoving;
+    public bool isCanmove = true;
+
 
 
     float height;
     float offset = 1f;
-   public virtual void Move()
+    public virtual void Move()
     {
 
     }
 
-   public void Addbrick()
+    public void Addbrick()
     {
         height += 0.2f;
         Brick bricks = Instantiate(brick, transform);
@@ -33,9 +33,11 @@ public class Character : MonoBehaviour
     {
         if (playerBricks.Count > 0)
         {
+            height -= 0.2f;
             Brick bricks = playerBricks[playerBricks.Count - 1];
             playerBricks.RemoveAt(playerBricks.Count - 1);
             Destroy(bricks.gameObject);
+            bricks.transform.position = new Vector3(transform.position.x,transform.position.y - height, transform.position.z - offset);
         }
     }
 
@@ -64,17 +66,29 @@ public class Character : MonoBehaviour
                     {
                         stair.ChangeColor(ColorEnum);
                         RemoveBrick();
-                        Debug.Log("Da va cham");
+                        //Debug.Log("Da va cham");
+                    }
+                    if (stair.ColorEnum != ColorEnum && playerBricks.Count == 0)
+                    {
+                        Debug.Log("da va cham");
+                        isCanmove = false;
                     }
                 }
+
+            }
+            else
+            {
+                isCanmove = true;
             }
         }
+        
     }
 
 
     private void OnTriggerEnter(Collider col)
     {
         CollideWithBrick(col);
+        CheckStage(col);
     }
 
     private void CollideWithBrick(Collider other)
@@ -84,7 +98,7 @@ public class Character : MonoBehaviour
             Brick brick = other.GetComponent<Brick>();
             if (brick != null)
             {
-                if (brick.ColorEnum == ColorEnum)
+                if (brick.ColorEnum == ColorEnum)s
                 {
                     // sinh gach sau lung
                     brick.TurnOff();
@@ -94,9 +108,23 @@ public class Character : MonoBehaviour
         }
     }
 
+    private void CheckStage(Collider col)
+    {
+        if (col.CompareTag("Stage2"))
+        {
+            Debug.Log("Da clear");
+            ClearBrick();
+        }
+    }
+
     public void ChangeColor(ColorEnum colorEnum)
     {
         this.ColorEnum = colorEnum;
         skinnedMeshRenderer.material = ColorData.GetColorData(ColorEnum);
+    }
+
+    public virtual void CheckMove()
+    {
+
     }
 }

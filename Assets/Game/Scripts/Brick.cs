@@ -5,10 +5,10 @@ using UnityEngine;
 
 public class Brick : MonoBehaviour
 {
+    [SerializeField] private ColorData ColorData;
     public ColorEnum ColorEnum;
     public MeshRenderer MeshRenderer;
     public BoxCollider Collider;
-    [SerializeField] private ColorData ColorData;
 
         //private void Awake()
         //{

@@ -118,7 +118,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7983a75a905cc9c4b91c68a7119624d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ColorData: {fileID: 11400000, guid: 198a3d5ed80dfdd49ab8028bf02fc759, type: 2}
   ColorEnum: 0
   MeshRenderer: {fileID: 6404684160342371744}
   Collider: {fileID: 4352157790330837491}
-  ColorData: {fileID: 11400000, guid: 198a3d5ed80dfdd49ab8028bf02fc759, type: 2}

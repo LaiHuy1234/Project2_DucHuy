@@ -16,6 +16,7 @@ public class Platform : MonoBehaviour
     void Start()
     {
         RandomBricks();
+        //Debug.Log(gameObject.name);
     }
 
     private void RandomBricks()
@@ -30,7 +31,8 @@ public class Platform : MonoBehaviour
             {
 
                 zSpace += 2f;
-                Vector3 position = new Vector3(startPosition.position.x + xScape, 0, startPosition.position.z + zSpace);
+                Vector3 position = new Vector3(startPosition.position.x + xScape, startPosition.position.y, startPosition.position.z + zSpace);
+                Debug.Log(position);
                 Brick brick = Instantiate(brickPrefab, position, Quaternion.identity);
                 //Renderer renderer = brickPrefab.GetComponent<Renderer>();
                 //int ColorRandom = Random.Range(0, 4);
@@ -38,8 +40,9 @@ public class Platform : MonoBehaviour
                 //renderer.material = colorData.GetColorData(ColorRandomColor);
 
                 int ColorRandom = Random.Range(0, 4);
-                brick.ChangeColor((ColorEnum)ColorRandom);
+                brick.ChangeColor((ColorEnum)ColorRandom);  
             }
+
         }
     }
 }

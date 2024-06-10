@@ -1,10 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
-using UnityEditor.SceneManagement;
 using UnityEngine;
-using System.Linq;
-using UnityEditor;
 
 public class Player : Character
 {
@@ -14,7 +8,7 @@ public class Player : Character
     //[SerializeField] private MeshRenderer renderer;
     public Material[] colorMats;
     public Platform platform;
-    public bool isMoving;
+    public bool isMoving = false;
 
     private void Start()
     {
@@ -23,33 +17,37 @@ public class Player : Character
     // Update is called once per frame
     void Update()
     {
-        Move();
         CheckStair();
+        Move();
     }
 
     public override void Move()
     {
-        if(!isMoving)
+        Debug.Log("1");
+        //Check Input
+        float hozizontal = Joystick.Horizontal;
+        float vertical = Joystick.Vertical;
+
+        if (!isCanmove && vertical > 0)
         {
-            Debug.Log("1");
-            //Check Input
-            float hozizontal = Joystick.Horizontal;
-            float vertical = Joystick.Vertical;
-
-            //Convert sang vector3
-            Vector3 Direction = new Vector3(hozizontal, 0, vertical);
-
-            //H�m Move
-            transform.Translate(Direction * Time.deltaTime * Speed, Space.World);
-
+            return;
         }
-        return;
+        //Convert sang vector3
+        Vector3 Direction = new Vector3(hozizontal, 0, vertical);
+
+        //H�m Move
+        transform.Translate(Direction * Time.deltaTime * Speed, Space.World);
     }
 
     public void RandomColor()
     {
         int ColorRandom = Random.Range(0, 4);
-       ChangeColor((ColorEnum)ColorRandom);
+        ChangeColor((ColorEnum)ColorRandom);
+    }
+
+    public override void CheckMove()
+    {
+
     }
 }
 
