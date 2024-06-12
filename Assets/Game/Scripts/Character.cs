@@ -15,6 +15,10 @@ public class Character : MonoBehaviour
 
     float height;
     float offset = 1f;
+    private void Start()
+    {
+        RandomColor();
+    }
     public virtual void Move()
     {
 
@@ -98,7 +102,7 @@ public class Character : MonoBehaviour
             Brick brick = other.GetComponent<Brick>();
             if (brick != null)
             {
-                if (brick.ColorEnum == ColorEnum)s
+                if (brick.ColorEnum == ColorEnum)
                 {
                     // sinh gach sau lung
                     brick.TurnOff();
@@ -121,6 +125,12 @@ public class Character : MonoBehaviour
     {
         this.ColorEnum = colorEnum;
         skinnedMeshRenderer.material = ColorData.GetColorData(ColorEnum);
+    }
+
+    public void RandomColor()
+    {
+        int ColorRandom = Random.Range(0, 4);
+        ChangeColor((ColorEnum)ColorRandom);
     }
 
     public virtual void CheckMove()

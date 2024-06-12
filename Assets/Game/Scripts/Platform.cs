@@ -45,4 +45,9 @@ public class Platform : MonoBehaviour
 
         }
     }
+
+    internal Vector3 SeekBrickPoint(ColorEnum color)
+    {
+
+    }
 }

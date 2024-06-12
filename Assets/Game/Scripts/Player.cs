@@ -39,11 +39,6 @@ public class Player : Character
         transform.Translate(Direction * Time.deltaTime * Speed, Space.World);
     }
 
-    public void RandomColor()
-    {
-        int ColorRandom = Random.Range(0, 4);
-        ChangeColor((ColorEnum)ColorRandom);
-    }
 
     public override void CheckMove()
     {
