@@ -9,17 +9,23 @@ public class Platform : MonoBehaviour
     [SerializeField] private Transform startPosition;
     [SerializeField] public GameObject[] List;
     [SerializeField] private ColorData colorData;
-    
-     
+    public List<Brick> bricks = new List<Brick>();
+    public static Platform Instance;
 
+    public void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
         RandomBricks();
-        //Debug.Log(gameObject.name);
     }
 
-    private void RandomBricks()
+    public void RandomBricks()
     {
         float zSpace = 0;
         float xScape = 0;
@@ -32,22 +38,31 @@ public class Platform : MonoBehaviour
 
                 zSpace += 2f;
                 Vector3 position = new Vector3(startPosition.position.x + xScape, startPosition.position.y, startPosition.position.z + zSpace);
-                Debug.Log(position);
                 Brick brick = Instantiate(brickPrefab, position, Quaternion.identity);
                 //Renderer renderer = brickPrefab.GetComponent<Renderer>();
                 //int ColorRandom = Random.Range(0, 4);
                 //ColorEnum ColorRandomColor = (ColorEnum)ColorRandom;
                 //renderer.material = colorData.GetColorData(ColorRandomColor);
 
-                int ColorRandom = Random.Range(0, 4);
-                brick.ChangeColor((ColorEnum)ColorRandom);  
+                int ColorRandom = Random.Range(1, 5);
+                brick.ChangeColor((ColorEnum)ColorRandom);
+                bricks.Add(brick);
             }
 
         }
     }
 
-    internal Vector3 SeekBrickPoint(ColorEnum color)
+    internal Brick SeekBrickPoint(ColorEnum color)
     {
-
+        Brick brick = null;
+        for (int i = 0; i < bricks.Count; i++)
+        {
+            if (bricks[i].ColorEnum == color)
+            {
+                brick = bricks[i];
+                break;
+            }
+        }
+        return brick;
     }
 }

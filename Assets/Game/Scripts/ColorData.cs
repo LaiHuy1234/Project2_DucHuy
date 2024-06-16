@@ -16,7 +16,8 @@ using static Unity.VisualScripting.StickyNote;
 public enum ColorEnum
 {
     None = 0,
-    Red = 1,
-    Green = 2,
-    Blue = 3,
+    Yellow = 1,
+    Red = 2,
+    Green = 3,
+    Blue = 4,
 }

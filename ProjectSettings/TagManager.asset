@@ -8,6 +8,7 @@ TagManager:
   - Ground
   - Brick
   - Stage2
+  - Door
   layers:
   - Default
   - TransparentFX

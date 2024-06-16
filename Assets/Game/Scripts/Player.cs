@@ -3,27 +3,13 @@ using UnityEngine;
 public class Player : Character
 {
     [SerializeField] private Joystick Joystick;
-    [SerializeField] private ColorPlayer playerColor;
     [SerializeField] private float Speed;
-    //[SerializeField] private MeshRenderer renderer;
-    public Material[] colorMats;
-    public Platform platform;
-    public bool isMoving = false;
 
-    private void Start()
-    {
-        RandomColor();
-    }
     // Update is called once per frame
-    void Update()
-    {
-        CheckStair();
-        Move();
-    }
-
+   
     public override void Move()
     {
-        Debug.Log("1");
+        //Debug.Log("1");
         //Check Input
         float hozizontal = Joystick.Horizontal;
         float vertical = Joystick.Vertical;

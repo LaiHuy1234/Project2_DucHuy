@@ -1,15 +1,20 @@
+using System;
 using System.Collections.Generic;
+using System.Security.Cryptography;
+using UnityEditor.SceneManagement;
 using UnityEngine;
 
 public class Character : MonoBehaviour
 {
     [SerializeField] private Brick brick;
-    [SerializeField] private ColorEnum ColorEnum;
     [SerializeField] private SkinnedMeshRenderer skinnedMeshRenderer;
-    [SerializeField] private ColorData ColorData;
     [SerializeField] private Vector3 Point;
+    [HideInInspector] public Platform platform;
+    public ColorEnum ColorEnum;
+    public ColorData ColorData;
     public List<Brick> playerBricks = new List<Brick>();
     public bool isCanmove = true;
+    public int BrickCount => playerBricks.Count;
 
 
 
@@ -18,6 +23,12 @@ public class Character : MonoBehaviour
     private void Start()
     {
         RandomColor();
+    }
+
+    void Update()
+    {
+        CheckStair();
+        Move();
     }
     public virtual void Move()
     {
@@ -30,6 +41,7 @@ public class Character : MonoBehaviour
         Brick bricks = Instantiate(brick, transform);
         bricks.ChangeColor(ColorEnum);
         bricks.transform.position = new Vector3(transform.position.x, transform.position.y + height, transform.position.z - offset);
+        Debug.Log(playerBricks.Count);
         playerBricks.Add(bricks);
     }
 
@@ -45,13 +57,16 @@ public class Character : MonoBehaviour
         }
     }
 
-    public void ClearBrick()
+    protected internal void ClearBrick()
     {
+        Debug.Log("Dang chay");
         for (int i = 0; i < playerBricks.Count; i++)
         {
-            Destroy(playerBricks[i]);
+            Destroy(playerBricks[i].gameObject);
         }
         playerBricks.Clear();
+        height = 0;
+        //Debug.Log(playerBricks.Count);
     }
 
     public void CheckStair()
@@ -74,7 +89,7 @@ public class Character : MonoBehaviour
                     }
                     if (stair.ColorEnum != ColorEnum && playerBricks.Count == 0)
                     {
-                        Debug.Log("da va cham");
+                        //Debug.Log("da va cham");
                         isCanmove = false;
                     }
                 }
@@ -85,14 +100,13 @@ public class Character : MonoBehaviour
                 isCanmove = true;
             }
         }
-        
     }
 
 
     private void OnTriggerEnter(Collider col)
     {
         CollideWithBrick(col);
-        CheckStage(col);
+        CheckDoor(col);
     }
 
     private void CollideWithBrick(Collider other)
@@ -112,14 +126,16 @@ public class Character : MonoBehaviour
         }
     }
 
-    private void CheckStage(Collider col)
+    private void CheckDoor(Collider door)
     {
-        if (col.CompareTag("Stage2"))
+        if (door.CompareTag("Door"))
         {
-            Debug.Log("Da clear");
+            door.GetComponent<BoxCollider>().enabled = false;
+            Debug.Log("Da xoa");
             ClearBrick();
         }
     }
+
 
     public void ChangeColor(ColorEnum colorEnum)
     {
@@ -129,7 +145,7 @@ public class Character : MonoBehaviour
 
     public void RandomColor()
     {
-        int ColorRandom = Random.Range(0, 4);
+        int ColorRandom = UnityEngine.Random.Range(1, 5);
         ChangeColor((ColorEnum)ColorRandom);
     }
 
