@@ -22,7 +22,7 @@ public class Character : MonoBehaviour
     float offset = 1f;
     private void Start()
     {
-        RandomColor();
+        OnInit();   
     }
 
     void Update()
@@ -30,6 +30,13 @@ public class Character : MonoBehaviour
         CheckStair();
         Move();
     }
+
+    public virtual void OnInit()
+    {
+        RandomColor();
+    }
+
+
     public virtual void Move()
     {
 

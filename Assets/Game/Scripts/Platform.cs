@@ -10,17 +10,14 @@ public class Platform : MonoBehaviour
     [SerializeField] public GameObject[] List;
     [SerializeField] private ColorData colorData;
     public List<Brick> bricks = new List<Brick>();
-    public static Platform Instance;
 
-    public void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-    }
     // Start is called before the first frame update
-    void Start()
+
+    private void Start()
+    {
+        RandomBricks();
+    }
+    internal void OnInit()
     {
         RandomBricks();
     }
@@ -49,6 +46,16 @@ public class Platform : MonoBehaviour
                 bricks.Add(brick);
             }
 
+        }
+    }
+
+    public void InitColor(ColorEnum colorEnum)
+    {
+        int amount = brickPoints.Length / LevelManager.Instance.CharacterAmount;
+
+        for (int i = 0; i < amount; i++)
+        {
+            RandomBricks();
         }
     }
 
