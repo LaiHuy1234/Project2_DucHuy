@@ -22,6 +22,7 @@ public class LevelManager : Singleton<LevelManager>
     {
         LoadLevel(0);
         OnInit();
+        UIManager.Instance.OpenUI<MainMenu>();
     }
     public void OnInit()
     {
@@ -80,6 +81,7 @@ public class LevelManager : Singleton<LevelManager>
 
     public void OnStartGame()
     {
+        GameManager.Instance.ChangeState(GameState.Gameplay);
         for (int i = 0; i < bots.Count; i++)
         {
             bots[i].ChangeState(new PatrolState());

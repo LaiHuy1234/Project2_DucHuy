@@ -31,7 +31,7 @@ public class Bot : Character
 
     private void Update()
     {
-        if (currentState != null)
+        if (GameManager.Instance.IsState(GameState.Gameplay) && currentState != null)
         {
             currentState.OnExcute(this);
 
